@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24db908f-64ee-4c1f-bc0e-8352fa13d0ce" name="Default Changelist" comment="" />
+    <list default="true" id="24db908f-64ee-4c1f-bc0e-8352fa13d0ce" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_python_oop/circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_python_oop/circle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_python_oop/colour.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_python_oop/colour.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_python_oop/geometric_figure.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_python_oop/geometric_figure.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_python_oop/rectangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_python_oop/rectangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_python_oop/square.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab_python_oop/square.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1hY3ePPQcmgkIrF3edzKSIMcNx3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,7 +28,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -63,21 +78,25 @@
       <screen x="0" y="0" width="1463" height="874" />
     </state>
     <state x="512" y="192" key="FileChooserDialogImpl/0.0.1463.874@0.0.1463.874" timestamp="1600183229462" />
-    <state width="1442" height="227" key="GridCell.Tab.0.bottom" timestamp="1601374495507">
+    <state width="1442" height="155" key="GridCell.Tab.0.bottom" timestamp="1603819904776">
       <screen x="0" y="0" width="1463" height="874" />
     </state>
-    <state width="1442" height="227" key="GridCell.Tab.0.bottom/0.0.1463.874@0.0.1463.874" timestamp="1601374495507" />
-    <state width="1442" height="227" key="GridCell.Tab.0.center" timestamp="1601374495507">
+    <state width="1442" height="155" key="GridCell.Tab.0.bottom/0.0.1463.874@0.0.1463.874" timestamp="1603819904776" />
+    <state width="1442" height="155" key="GridCell.Tab.0.center" timestamp="1603819904775">
       <screen x="0" y="0" width="1463" height="874" />
     </state>
-    <state width="1442" height="227" key="GridCell.Tab.0.center/0.0.1463.874@0.0.1463.874" timestamp="1601374495507" />
-    <state width="1442" height="227" key="GridCell.Tab.0.left" timestamp="1601374495507">
+    <state width="1442" height="155" key="GridCell.Tab.0.center/0.0.1463.874@0.0.1463.874" timestamp="1603819904775" />
+    <state width="1442" height="155" key="GridCell.Tab.0.left" timestamp="1603819904773">
       <screen x="0" y="0" width="1463" height="874" />
     </state>
-    <state width="1442" height="227" key="GridCell.Tab.0.left/0.0.1463.874@0.0.1463.874" timestamp="1601374495507" />
-    <state width="1442" height="227" key="GridCell.Tab.0.right" timestamp="1601374495507">
+    <state width="1442" height="155" key="GridCell.Tab.0.left/0.0.1463.874@0.0.1463.874" timestamp="1603819904773" />
+    <state width="1442" height="155" key="GridCell.Tab.0.right" timestamp="1603819904776">
       <screen x="0" y="0" width="1463" height="874" />
     </state>
-    <state width="1442" height="227" key="GridCell.Tab.0.right/0.0.1463.874@0.0.1463.874" timestamp="1601374495507" />
+    <state width="1442" height="155" key="GridCell.Tab.0.right/0.0.1463.874@0.0.1463.874" timestamp="1603819904776" />
+    <state x="241" y="80" key="SettingsEditor" timestamp="1603815562027">
+      <screen x="0" y="0" width="1463" height="874" />
+    </state>
+    <state x="241" y="80" key="SettingsEditor/0.0.1463.874@0.0.1463.874" timestamp="1603815562027" />
   </component>
 </project>

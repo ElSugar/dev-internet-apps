@@ -5,9 +5,12 @@ from lab_python_oop.circle import Circle
 
 def main():
     number = 22
-    figure = [Rectangle(number, number, 'синего'), Circle(number, 'зеленого'), Square(number, 'красного')]
-    for _ in range(3):
-        print(figure[_])
+    example_rectangle = Rectangle("красного", number, number - 1)
+    example_square = Square("белого", number)
+    example_circle = Circle("черного", number)
+    print(example_rectangle)
+    print(example_square)
+    print(example_circle)
 
 
 if __name__ == "__main__":

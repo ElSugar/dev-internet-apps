@@ -3,20 +3,26 @@ from lab_python_oop.colour import Colour
 
 
 class Rectangle(Figure):
-    def __init__(self, input_width, input_height, input_colour):
-        self.width = input_width
-        self.height = input_height
-        self.colour = Colour()
-        self.colour.colour_property = input_colour
+    FIGURE_TYPE = "Прямоугольник"
 
     @classmethod
-    def get_name(cls):
-        return 'Прямоугольник'
+    def get_figure_type(cls):
+        return cls.FIGURE_TYPE
+
+    def __init__(self, input_colour, input_width, input_height):
+        self.width = input_width
+        self.height = input_height
+        self.fc = Colour()
+        self.fc.colour_property = input_colour
 
     def area(self):
-        return self.height * self.width
+        return self.width * self.height
 
     def __repr__(self):
-        return '{} {} цвета шириной {} и высотой {} имеет площадь {}'.format(self.get_name(), self.colour.colour_property,
-                                                                             self.width, self.height,  self.area())
-
+        return '{} {} цвета шириной {} и высотой {} площадью {}.'.format(
+            Rectangle.get_figure_type(),
+            self.fc.colour_property,
+            self.width,
+            self.height,
+            self.area()
+        )

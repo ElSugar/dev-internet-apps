@@ -1,7 +1,7 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
-# Абстрактный метод – метод, который объявлен, но не реализован.
 class Figure(ABC):
-    pass
-
+    @abstractmethod
+    def area(self):
+        pass

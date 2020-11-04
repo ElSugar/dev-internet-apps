@@ -4,18 +4,24 @@ from lab_python_oop.colour import Colour
 
 
 class Circle(Figure):
-    def __init__(self, input_radius, input_colour):
-        self.radius = input_radius
-        self.colour = Colour()
-        self.colour.colour_property = input_colour
+    FIGURE_TYPE = "Круг"
 
     @classmethod
-    def get_name(cls):
-        return 'Круг'
+    def get_figure_type(cls):
+        return cls.FIGURE_TYPE
+
+    def __init__(self, input_colour, input_radius):
+        self.radius = input_radius
+        self.fc = Colour()
+        self.fc.colour_property = input_colour
 
     def area(self):
-        return pi * self.radius ** 2
+        return pi*(self.radius**2)
 
     def __repr__(self):
-        return '{} {} цвета радиусом {} имеет площадь {}'.format(self.get_name(), self.colour.colour_property,
-                                                                 self.radius, self.area())
+        return '{} {} цвета радиусом {} площадью {}.'.format(
+            Circle.get_figure_type(),
+            self.fc.colour_property,
+            self.radius,
+            self.area()
+        )

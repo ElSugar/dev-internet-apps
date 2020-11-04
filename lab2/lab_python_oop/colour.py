@@ -1,12 +1,17 @@
 class Colour:
     def __init__(self):
-        self.hidden_colour = None
+        self.colour = None
 
     @property
     def colour_property(self):
-        return self.hidden_colour
+        """
+        Get-аксессор
+        """
+        return self.colour
 
     @colour_property.setter
     def colour_property(self, input_colour):
-        self.hidden_colour = input_colour
-
+        """
+        Set-аксессор
+        """
+        self.colour = input_colour
