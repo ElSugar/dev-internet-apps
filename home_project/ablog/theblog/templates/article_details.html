@@ -20,4 +20,16 @@
 <hr>
 {{ post.body|safe }}
 
+{% if user.is_authenticated %}
+<form action="{% url 'like-post' post.pk %}" method="POST">
+  {% csrf_token %}
+  {% if liked %}
+  <button type="submit" name="post_id" value="{{ post.id }}" class="btn btn-danger btn-small">Unliked</button> 
+  {% else %}
+  <button type="submit" name="post_id" value="{{ post.id }}" class="btn btn-primary btn-small">Like</button> 
+  {% endif %}
+  {% endif %}
+  {{ total_likes }} likes
+</form>
+<br><br>
 {% endblock %}
