@@ -17,6 +17,11 @@
   </form>
 </div>
 
+<script>
+  var name = "{{ user.id }}";
+  document.getElementById("elder").value = name;
+</script>
+
 {% else %}
 <p>You're not allowed</p>
 {% endif %}
