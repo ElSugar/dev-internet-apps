@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} Create Post {% endblock %}
+{% block content %}
+
+
+
+<br>
+{% if user.is_authenticated %}
+<h2>Create a New Post</h2>
+<br>
+<div class="form-group">
+  <form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <a href="{% url 'home' %}" class="btn btn-sm btn-outline-secondary">Cancel</a>
+  <button class="btn btn-sm btn-outline-secondary">Create</button>
+  </form>
+</div>
+
+{% else %}
+<p>You're not allowed</p>
+{% endif %}
+
+{% endblock %}

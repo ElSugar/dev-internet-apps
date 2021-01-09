@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Abroad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Travel Abroad</div>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li>
+          <a href="/countries.html">Countries</a>
+          <ul>
+            <li><a href="/europe.html">Europe</a></li>
+            <li><a href="/asia.html">Asia</a></li>
+            <li><a href="/america.html">America</a></li>
+            <li><a href="/australia.html">Australia</a></li>
+            <li><a href="/africa.html">Africa</a></li>
+          </ul>
+        </li>
+        <li><a href="/prices.html">Prices</a></li>
+        <li><a href="/about_us.html">About us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="content" style="top: 50%;">
+    <header>Contact Us!</header>
+    <form action="results.html" enctype="multipart/form-data">
+      <div>
+        <label for="name">Name</label>
+        <input name="name" id="name" placeholder="Your name" required>
+      </div>
+      <div style="margin: 10px;">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Your e-mail"required>
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="+8**********" required>
+      </div>
+      <div style="margin: 10px;">
+        <label for="people">Num.of people</label>
+        <input type="number" name="peopla" id="people" value="1" min="1" max="10" style="width: 40px;">
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" min="2021-01-01">
+      </div>
+      <div style="margin: 10px;">
+        <div>
+          <label for="child">with children</label>
+          <input type="checkbox" name="child" id="child">
+        </div>
+        <div>
+          <label for="pet">with pets</label>
+          <input type="checkbox" name="pet" id="pet">
+        </div>
+      </div>
+      <div>
+        Gender
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+        </div>
+      </div>
+      <div style="margin: 10px;">
+        <label for="transport">Transport</label>
+        <select name="transport" id="transport">
+          <option value="Plane">Plane</option>
+          <option value="Train">Train</option>
+          <option value="Car">Car</option>
+        </select>
+      </div>
+      <div>
+        <label for="visa">Visa</label>
+        <input type="file" name="visa" id="visa">
+      </div>
+      <div style="margin: 10px;">
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment"></textarea required
+      </div>
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+      
+    </form>
+  </div>
+  
+</body>
+
+</html>
