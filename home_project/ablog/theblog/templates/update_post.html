@@ -3,6 +3,7 @@
 {% block content %}
 
 {% if user.is_authenticated %}
+{% if user.id == post.author.id %}
 <br>
 <h2>Edit Your Post</h2>
 <br>
@@ -17,7 +18,9 @@
     
   </form>
 </div>
-
+{% else %}
+<p>You're not allowed.</p>
+{% endif %}
 {% else %}
 <p>You're not allowed.</p>
 {% endif %}

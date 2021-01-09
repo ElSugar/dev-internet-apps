@@ -15,8 +15,10 @@
       <br/>
       <small>{{ post.author.first_name }} {{ post.author.last_name }}, {{ post.date }}</small>
       {% if user.is_authenticated %}
+      {% if user.id == post.author.id %}
       <small><a href="{% url 'update-post' post.pk %}" class="text-decoration-none">Edit</a></small>
       <small><a href="{% url 'delete-post' post.pk %}" class="text-decoration-none">Delete</a></small>
+      {% endif %}
       {% endif %}
       <br>
       {{ post.body|slice:":200"|safe }}

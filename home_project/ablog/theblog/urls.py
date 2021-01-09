@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import HomeView, ArticleDetailView, AddPostView, UpdatePostView, DeletePostView, AddCategoryView, CategoryView
+from .views import HomeView, ArticleDetailView, AddPostView, UpdatePostView, DeletePostView, AddCategoryView, CategoryView, CategoryListView
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
@@ -9,5 +9,6 @@ urlpatterns = [
     path('article/<int:pk>/edit', UpdatePostView.as_view(), name='update-post'),
     path('article/<int:pk>/delete', DeletePostView.as_view(), name='delete-post'),
     path('category/<str:cats>', CategoryView, name='category'),
+    path('category-list', CategoryListView, name='category-list'),
     path('add-category', AddCategoryView.as_view(), name='add-category'),
 ]

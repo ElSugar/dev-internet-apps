@@ -3,6 +3,7 @@
 {% block content %}
 
 {% if user.is_authenticated %}
+{% if user.id == post.author.id %}
 <h2>Deleting {{ post.title }}</h2>
 <br>
 <p>Are you sure?</p>
@@ -13,6 +14,9 @@
     <button class="btn btn-sm btn-outline-secondary">Submit</button>
   </form>
 </div>
+{% else %}
+<p>You're not allowed.</p>
+{% endif %}
 {% else %}
 <p>You're not allowed.</p>
 {% endif %}
