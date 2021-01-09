@@ -8,7 +8,10 @@
 <a href="{% url 'delete-post' post.pk %}" class="btn btn-sm btn-outline-secondary">Delete</a>
 {% endif %}
 <br><br>
-<h1>{{ post.title }}</h1>
+<a href="{% url 'category' post.category %}">
+  <span class="badge badge-pill badge-dark" style="color:white; background-color: #d9adad;">{{ post.category }}</span>
+</a>
+<h2>{{ post.title }}</h2>
 <small>Posted by {{ post.author.first_name }} {{ post.author.last_name }}</small><br>
 <small>{{ post.date }}</small><br>
 
