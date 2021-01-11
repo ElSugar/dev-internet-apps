@@ -6,19 +6,27 @@
 
 <br>
 {% if user.is_authenticated %}
-<h2>Add a New Category</h2>
+<div class="d-flex justify-content-center">
+  <h2>Add a New Category</h2>
+</div>
 <br>
-<div class="form-group">
-  <form method="POST">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <a href="{% url 'home' %}" class="btn btn-sm btn-outline-secondary">Cancel</a>
-  <button class="btn btn-sm btn-outline-secondary">Add</button>
-  </form>
+<div class="d-flex justify-content-center">
+  <div class="form-group">
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <div class="d-flex justify-content-center">
+        <a href="{% url 'home' %}" class="btn btn-sm btn-outline-secondary">Cancel</a>
+        <button class="btn btn-sm btn-outline-secondary">Add</button>
+      </div>
+      
+    </form>
+  </div>
+
+  {% else %}
+  <p>You're not allowed</p>
+  {% endif %}
 </div>
 
-{% else %}
-<p>You're not allowed</p>
-{% endif %}
 
 {% endblock %}

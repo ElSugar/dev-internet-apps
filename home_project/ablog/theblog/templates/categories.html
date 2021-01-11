@@ -5,9 +5,12 @@
 <a href="{% url 'home' %}" class="btn btn-sm btn-outline-secondary">Main page</a>
 <br><br>
 {% if category_posts %}
-  <h2>Category: {{ cats }}</h2>
+  <div class="d-flex justify-content-center">
+    <h2>Category: {{ cats }}</h2>
+  </div>
+  
 
-  <ul>
+  <ul style="list-style-type:none;">
     {% for post in category_posts %}
     <li>
       <a href="{% url 'article-detail' post.pk %}" class="text-decoration-none">
