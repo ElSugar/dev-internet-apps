@@ -15,7 +15,9 @@
               <small><span class="badge badge-pill badge-dark" style="color:white; background-color: #d9adad;">{{ post.category }}</span></small>
             </a>
             <br/>
-            <small>{{ post.author.first_name }} {{ post.author.last_name }}, {{ post.date }}</small>
+            <small>
+              <a href="{% url 'show-profile-page' post.author.profile.id %}" class="text-decoration-none">{{ post.author.first_name }} {{ post.author.last_name }}</a>, {{ post.date }}
+            </small>
             {% if user.is_authenticated %}
             {% if user.id == post.author.id %}
             <small><a href="{% url 'update-post' post.pk %}" class="text-decoration-none">Edit</a></small>
