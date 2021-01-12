@@ -4,6 +4,7 @@
 {% block content %}
 
 <a href="{% url 'home' %}" class="btn btn-sm btn-outline-secondary">Main page</a>
+<a href="{% url 'show-posts' page_user.user.id %}" class="btn btn-sm btn-outline-secondary">Posts</a>
 
 <div class="d-flex justify-content-center">
   <h2>User {{ page_user }}</h2>

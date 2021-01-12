@@ -43,10 +43,9 @@
     {% else %}
     <button type="submit" name="post_id" value="{{ post.id }}" class="btn btn-sm btn-danger">Like</button> 
     {% endif %}
-    {% endif %}
-    
   </form>
 </div>
+{% endif %}
 <div class="d-flex justify-content-center">
   {{ total_likes }} likes
 </div>

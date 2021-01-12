@@ -4,7 +4,7 @@ from django.views.generic import DetailView, CreateView
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.urls import reverse_lazy
 from .forms import SignUpForm, EditProfileForm, ProfilePageForm
-from theblog.models import Profile
+from theblog.models import Profile, Post
 
 
 class CreateProfilePageView(CreateView):
@@ -49,3 +49,7 @@ class UserEditView(generic.UpdateView):
 
   def get_object(self):
     return self.request.user
+
+def PostView(request, pk):
+  user_posts = Post.objects.filter(author_id=pk)
+  return render(request, 'registration/posts.html', {'pk': pk, 'user_posts': user_posts})
